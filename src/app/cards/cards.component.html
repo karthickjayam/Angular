@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-block">
+      <p class="card-text">{{userKey||text}}</p>
+      <input class="form-control" placeholder="UserName" [value]="userKey" (input)="userKey=$event.target.value"/>
+      <p class="card-text">{{number}}</p>
+      <input class="form-control" placeholder="UserName" [(ngModel)]="userKey"/>
+      
+    </div>
+  </div>
+</div>
